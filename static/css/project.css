@@ -1,0 +1,232 @@
+:root {
+  --primary-color: #176b87;
+  --primary-hover: #0f526a;
+  --text-primary: #202124;
+  --text-secondary: #5f6368;
+  --background-secondary: #f7f8fa;
+  --border-color: #e5e7eb;
+  --border-radius: 8px;
+}
+
+body {
+  color: var(--text-primary);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.65;
+}
+
+.hero .hero-body {
+  padding: 4.5rem 1.5rem 3.5rem;
+}
+
+.publication-title {
+  color: var(--text-primary) !important;
+  letter-spacing: -0.035em;
+  margin-bottom: 1.1rem !important;
+}
+
+.publication-title span {
+  color: var(--primary-color) !important;
+}
+
+.publication-title.subtitle {
+  max-width: 850px;
+  margin: 0 auto 1.25rem !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.02em;
+}
+
+.publication-authors {
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.75rem;
+}
+
+.author-block {
+  display: inline;
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.55rem;
+  margin-top: 1.5rem;
+}
+
+.publication-links .link-block a {
+  margin: 0;
+  background: #fff !important;
+  border: 1px solid #d1d5db !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+  color: #202124 !important;
+  font-weight: 600 !important;
+}
+
+.publication-links .link-block a:hover {
+  background: #f2f5f7 !important;
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+  transform: translateY(-1px);
+}
+
+.teaser .hero-body {
+  padding: 1rem 1.5rem 3rem;
+}
+
+.method-figure {
+  display: block;
+  width: 100%;
+  max-width: 1120px;
+  height: auto;
+  margin: 0 auto 1.25rem;
+}
+
+.results-container {
+  max-width: 1280px !important;
+}
+
+.teaser .subtitle {
+  max-width: 850px;
+  margin: 0 auto;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.hero.is-light {
+  border: 0;
+}
+
+.section,
+.hero.is-small .hero-body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.section .title,
+.hero .title {
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.result-figure {
+  height: 100%;
+  margin: 0;
+  padding: 0.8rem;
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.result-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.gif-square {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #050505;
+}
+
+.gif-square img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.results-intro {
+  max-width: 850px;
+  margin: 0 auto 1.75rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.method-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.method-steps > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.15rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.method-steps strong {
+  color: var(--primary-color);
+}
+
+.method-steps span {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.real-results-image {
+  width: 100%;
+  height: clamp(280px, 45vw, 560px) !important;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.real-dendrite-figure {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.result-figure figcaption {
+  padding: 0.75rem 0.25rem 0.2rem;
+  color: var(--text-secondary);
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+#BibTeX pre {
+  overflow-x: auto;
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: #f7f8fa;
+  font-size: 0.9rem;
+}
+
+#Acknowledgments {
+  border-top: 1px solid var(--border-color);
+}
+
+.footer {
+  padding: 1.5rem;
+  background: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .hero .hero-body {
+    padding: 3rem 1.25rem 2.5rem;
+  }
+
+  .publication-title.title {
+    font-size: 2.35rem !important;
+  }
+
+  .publication-title.subtitle {
+    font-size: 1.3rem !important;
+  }
+
+  .publication-authors {
+    font-size: 0.98rem !important;
+  }
+
+  .method-steps {
+    grid-template-columns: 1fr;
+  }
+}

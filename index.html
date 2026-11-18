@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="TriDeFusion-v2: Distilled Hybrid Residual Attention Denoising and Wavelet Filtering">
+  <meta name="description" content="TriDeFusion-v2 combines distilled residual attention denoising and wavelet filtering for efficient restoration of 3D fluorescence microscopy images.">
+  <meta name="keywords" content="fluorescence microscopy, image denoising, wavelet filtering, residual attention, 3D imaging">
+  <meta name="author" content="Ivan Zolin, Anastasiya Rakovskaya, Evgenii Fedorov, Sergey Belyaev, Vyacheslav Chukanov, Ekaterina Pchitskaya">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="TriDeFusion-v2">
+  <meta property="og:description" content="Efficient restoration of 3D fluorescence microscopy images with hybrid denoising and wavelet filtering.">
+  <meta property="og:image" content="static/images/tdf2.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="citation_title" content="TriDeFusion-v2: Distilled Hybrid Residual Attention Denoising and Wavelet Filtering">
+  <meta name="citation_author" content="Zolin, Ivan">
+  <meta name="citation_author" content="Rakovskaya, Anastasiya">
+  <meta name="citation_author" content="Fedorov, Evgenii">
+  <meta name="citation_author" content="Belyaev, Sergey">
+  <meta name="citation_author" content="Chukanov, Vyacheslav">
+  <meta name="citation_author" content="Pchitskaya, Ekaterina">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_journal_title" content="IEEE Access">
+  <meta name="citation_doi" content="10.1109/ACCESS.2026.3750817">
+  <meta name="theme-color" content="#2563eb">
+  <title>TriDeFusion-v2 | Research Project</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="static/css/project.css">
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+</head>
+<body>
+<main id="main-content">
+  <section class="hero"><div class="hero-body"><div class="container is-max-desktop"><div class="columns is-centered"><div class="column has-text-centered">
+    <h1 class="title is-1 publication-title"><span style="color:#2563eb">TriDeFusion-v2</span></h1>
+    <h2 class="subtitle is-3 publication-title">Distilled Hybrid Residual Attention Denoising and Wavelet Filtering</h2>
+    <p class="is-size-5 has-text-weight-semibold" style="color:#4a5568;margin-top:-1rem;margin-bottom:1.5rem">IEEE Access · 2026</p>
+    <div class="is-size-5 publication-authors">
+      <span class="author-block"><a href="https://imzolin.github.io" target="_blank" rel="noopener">Ivan Zolin</a><sup>1,4</sup>, <a href="https://scholar.google.com/citations?hl=en&amp;user=7kOAPm0AAAAJ" target="_blank" rel="noopener">Anastasiya Rakovskaya</a><sup>1,2</sup>, <a href="https://www.researchgate.net/profile/Evgenii-Fedorov-3" target="_blank" rel="noopener">Evgenii Fedorov</a><sup>1,2</sup>,</span>
+      <span class="author-block"><a href="https://www.researchgate.net/profile/Sergey-Belyaev-9" target="_blank" rel="noopener">Sergey Belyaev</a><sup>3</sup>, <a href="https://chukanov.science" target="_blank" rel="noopener">Vyacheslav Chukanov</a><sup>1,3</sup>, <a href="https://neuroai-lab.ru/en/" target="_blank" rel="noopener">Ekaterina Pchitskaya</a><sup>1,2</sup></span>
+    </div>
+    <div class="is-size-5 publication-authors">
+      <span class="author-block"><sup>1</sup>Laboratory of Biomedical Imaging &amp; Data Analysis, Institute of Biomedical Systems and Biotechnology, SPbPU, Saint Petersburg, Russia</span>
+      <span class="author-block"><sup>2</sup>Laboratory of Molecular Neurodegeneration, same institute, SPbPU, Saint Petersburg, Russia</span>
+      <span class="author-block"><sup>3</sup>Higher School of Applied Mathematics and Computational Physics, SPbPU, Saint Petersburg, Russia</span>
+      <span class="author-block"><sup>4</sup>ITMO University</span>
+    </div>
+    <div class="column has-text-centered"><div class="publication-links">
+      <span class="link-block"><a href="https://ieeexplore.ieee.org/abstract/document/11775476" target="_blank" rel="noopener" class="external-link button is-normal is-rounded is-dark"><span class="icon"><i class="fas fa-file-alt"></i></span><span>Paper</span></a></span>
+      <span class="link-block"><a href="https://github.com/Biomed-imaging-lab/TriDeFusion" target="_blank" rel="noopener" class="external-link button is-normal is-rounded is-dark"><span class="icon"><i class="fab fa-github"></i></span><span>Code</span></a></span>
+      <span class="link-block"><a href="#BibTeX" class="external-link button is-normal is-rounded is-dark"><span class="icon"><i class="fas fa-quote-right"></i></span><span>Cite</span></a></span>
+    </div></div>
+  </div></div></div></div></section>
+  <section class="hero teaser"><div class="container is-max-desktop"><div class="hero-body">
+    <img class="method-figure" src="static/images/tdf2.png" alt="TriDeFusion-v2 method overview and microscopy results" loading="eager">
+    <h2 class="subtitle has-text-centered">TriDeFusion-v2 combines a compact learned denoiser with wavelet-domain filtering to restore noisy 3D fluorescence microscopy data.</h2>
+  </div></div></section>
+  <section class="section hero is-light"><div class="container is-max-desktop"><div class="columns is-centered has-text-centered"><div class="column is-four-fifths">
+    <h2 class="title is-3">Abstract</h2><div class="content has-text-justified"><p>Fluorescence microscopy reveals fine biological structures but can produce noisy images, especially under low-light imaging conditions. TriDeFusion-v2 (TDF2) combines a compact learned denoiser with wavelet-domain filtering to restore 3D fluorescence microscopy data. The paper evaluates the method on synthetic and real microscopy data, considering both restoration quality and inference efficiency.</p></div>
+  </div></div></div></section>
+  <section class="section"><div class="container is-max-desktop content">
+    <h2 class="title is-3 has-text-centered">Method</h2>
+    <p>TDF2 uses a compact RAUDen-Lite student denoiser followed by a wavelet filtering stage. The wavelet operator is CUDA-optimized for accelerated execution. During training, a RAUDen teacher provides denoised targets; the student is trained with restoration and distillation losses. This design aims to retain useful image detail while reducing the cost of the denoising model.</p>
+    <div class="method-steps"><div><strong>1. Learned denoising</strong><span>RAUDen-Lite estimates a clean image from the noisy microscopy input.</span></div><div><strong>2. Wavelet refinement</strong><span>Wavelet-domain filtering complements the learned denoising stage.</span></div><div><strong>3. Distilled training</strong><span>Teacher outputs guide a smaller student through restoration and distillation objectives.</span></div></div>
+  </div></section>
+  <section class="section"><div class="container is-max-desktop content">
+    <h2 class="title is-3 has-text-centered">From TriDeFusion-v1 to v2</h2>
+    <p><strong>TriDeFusion-v2 is a follow-up to TriDeFusion-v1.</strong> The original TriDeFusion paper introduced an enhanced denoising algorithm for 3D fluorescence microscopy that integrates modified Noise2Noise and non-local means. TDF2 advances this line of work with a distilled hybrid residual-attention denoiser and wavelet filtering. The v1 paper appeared in the 2024 IEEE SIBIRCON conference; see its <a href="https://ieeexplore.ieee.org/document/10758532" target="_blank" rel="noopener">IEEE record</a>.</p>
+  </div></section>
+  <section class="hero is-small is-light"><div class="hero-body"><div class="container is-max-widescreen results-container">
+    <h2 class="title is-3 has-text-centered">Results</h2>
+    <p class="results-intro">The examples below show complementary evaluations: a synthetic tube-structure comparison and a real fluorescence microscopy sequence. The real-data animation presents noisy and denoised views over time, allowing inspection of how fine dendritic structures and background texture appear through the sequence.</p>
+    <div class="columns is-centered is-multiline">
+      <div class="column is-half"><figure class="result-figure"><img src="static/images/synthetic_tubes_res.png" alt="TriDeFusion-v2 restoration results on synthetic tube structures" loading="lazy"><figcaption>Restoration results on synthetic tube structures.</figcaption></figure></div>
+      <div class="column is-half"><figure class="result-figure"><div class="gif-square"><img src="static/videos/TriDeFusion-demo.gif" alt="Animated TriDeFusion-v2 denoising result on real dendritic tubes" loading="lazy"></div><figcaption>Denoising result on real dendritic tubes.</figcaption></figure></div>
+      <div class="column is-full"><figure class="result-figure real-dendrite-figure"><img class="real-results-image" src="static/images/tdf2.png" alt="Real dendritic-tube fluorescence microscopy examples and TriDeFusion-v2 restoration comparisons" loading="lazy"><figcaption>Real dendritic-tube microscopy examples and restoration comparisons from the paper figure.</figcaption></figure></div>
+    </div>
+  </div></div></section>
+  <section class="section" id="BibTeX"><div class="container is-max-desktop content">
+    <h2 class="title is-3">Citation</h2><pre><code>@article{zolin2026tridefusionv2,
+  title={TriDeFusion-v2: Distilled Hybrid Residual Attention Denoising and Wavelet Filtering},
+  author={Zolin, Ivan and Rakovskaya, Anastasiya and Fedorov, Evgenii and Belyaev, Sergey and Chukanov, Vyacheslav and Pchitskaya, Ekaterina},
+  journal={IEEE Access},
+  year={2026},
+  doi={10.1109/ACCESS.2026.3750817}
+}</code></pre>
+    <h3 class="title is-5">TriDeFusion-v1</h3><pre><code>@INPROCEEDINGS{10758532,
+  author={Zolin, Ivan and Chukanov, Vyacheslav and Pchitskaya, Ekaterina},
+  booktitle={2024 IEEE International Multi-Conference on Engineering, Computer and Information Sciences (SIBIRCON)},
+  title={TriDeFusion: Enhanced denoising algorithm for 3D fluorescence microscopy images integrating modified Noise2Noise and Non-local means},
+  year={2024},
+  pages={211--216},
+  doi={10.1109/SIBIRCON63777.2024.10758532}
+}</code></pre>
+  </div></section>
+</main>
+<section class="section" id="Acknowledgments"><div class="container is-max-desktop content">
+  <h2 class="title is-3">Acknowledgments</h2><p>This work was supported by the Ministry of Science and Higher Education under Grant FSEG-2024-0025.</p>
+  <p><strong>Contact:</strong> <a href="mailto:zolin_im@outlook.com">zolin_im@outlook.com</a></p>
+  <p><strong>Head of the laboratory:</strong> Ekaterina Pchitskaya (<a href="mailto:katrin.pchitskaya@gmail.com">katrin.pchitskaya@gmail.com</a>).</p>
+</div></section>
+<footer class="footer"><div class="container"><div class="content has-text-centered"><p>TriDeFusion-v2 research project page.</p></div></div></footer>
+</body>
+</html>
